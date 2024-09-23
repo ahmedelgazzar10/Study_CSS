@@ -123,6 +123,10 @@
      list-style-position: inside;
  }
 
+ .javascript ul {
+     padding-left: 0;
+ }
+
  table {
      width: 700px;
      margin: 20px auto;
