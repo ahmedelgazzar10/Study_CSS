@@ -119,7 +119,7 @@
  .ul1 li {
      background-color: white;
      padding: 5px;
-     margin: 5px;
+     margin: 5px 0;
      list-style-position: inside;
  }
 
