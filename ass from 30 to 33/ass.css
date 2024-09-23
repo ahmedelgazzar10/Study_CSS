@@ -110,11 +110,17 @@
  }
 
  .ol1 li,
- .ol2 li,
+ .ol2 li {
+     background-color: white;
+     padding: 5px;
+     margin: 5px;
+ }
+
  .ul1 li {
      background-color: white;
      padding: 5px;
      margin: 5px;
+     list-style-position: inside;
  }
 
  table {
