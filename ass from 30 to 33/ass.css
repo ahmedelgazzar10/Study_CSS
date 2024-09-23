@@ -1,0 +1,161 @@
+ .parent div {
+     width: 100px;
+     height: 100px;
+ }
+
+ .green {
+     background-color: #009688;
+     z-index: 2;
+     position: absolute;
+     top: 30px;
+     left: 30px;
+ }
+
+ .blue {
+     background-color: #03a9f4;
+     z-index: 1;
+     position: absolute;
+     top: 20px;
+     left: 20px;
+ }
+
+ .red {
+     background-color: #f44336;
+     z-index: 3;
+     position: absolute;
+     top: 40px;
+     left: 40px;
+ }
+
+ .black {
+     background-color: black;
+     z-index: -1;
+     top: 30px;
+     left: 20px;
+     position: absolute;
+ }
+
+ .pos {
+     margin-top: 145px;
+ }
+
+ .parent2 {
+     width: 400px;
+     background-color: #eee;
+     margin: 20px auto;
+     padding: 20px;
+     border-top: #f4463a solid 2px;
+     border-bottom: #f4463a solid 2px;
+     position: relative;
+     border-right: #2196f3 solid 2px;
+     border-left: #2196f3 solid 2px;
+ }
+
+ .top-left {
+     background-color: #2196f3;
+     color: white;
+     border-right: #f4463a solid 2px;
+     position: absolute;
+     top: -9px;
+     width: 20px;
+     left: -10px;
+     text-align: center;
+ }
+
+ .top-right {
+     background-color: #2196f3;
+     color: white;
+     border-left: #f4463a solid 2px;
+     position: absolute;
+     top: -9px;
+     width: 20px;
+     right: -10px;
+     text-align: center;
+ }
+
+ .bottom-left {
+     background-color: #2196f3;
+     color: white;
+     border-right: #f4463a solid 2px;
+     position: absolute;
+     bottom: -9px;
+     width: 20px;
+     left: -10px;
+     text-align: center;
+ }
+
+ .bottom-right {
+     background-color: #2196f3;
+     color: white;
+     border-left: #f4463a solid 2px;
+     position: absolute;
+     bottom: -9px;
+     width: 20px;
+     right: -10px;
+     text-align: center;
+ }
+
+ .parent3 {
+     width: 400px;
+     margin: 10px auto;
+ }
+
+ .html,
+ .css,
+ .javascript {
+     background-color: #eeeeee;
+     list-style: none;
+     padding: 10px;
+     margin-bottom: 15px;
+ }
+
+ .ol1 li,
+ .ol2 li,
+ .ul1 li {
+     background-color: white;
+     padding: 5px;
+     margin: 5px;
+ }
+
+ table {
+     width: 700px;
+     margin: 20px auto;
+     border-spacing: 2px;
+ }
+
+ caption {
+     margin-bottom: 10px;
+ }
+
+ img {
+     width: 100px;
+     height: 100px;
+     position: relative;
+     top: 2px;
+ }
+
+ thead td {
+     text-align: center;
+     font-weight: bold;
+     background-color: #404040;
+     color: white;
+     padding: 15px;
+ }
+
+ tbody td {
+     background-color: #eeeeee;
+     text-align: center;
+     padding: 5px;
+ }
+
+ .view {
+     color: white;
+     background-color: #03a9f4;
+     border: none;
+ }
+
+ .delete {
+     color: white;
+     background-color: #e91e63;
+     border: none;
+ }
