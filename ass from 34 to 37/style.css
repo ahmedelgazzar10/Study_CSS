@@ -48,8 +48,9 @@
     background-color: #dddddd;
     text-align: center;
     padding: 5px;
-    left: -75px;
+    left: -80px;
     top: 4px;
+    width: 50px;
 }
 
 .parent3 p::after {
