@@ -139,10 +139,10 @@ p {
 }
 
 .line::before {
+    content: "OR";
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    content: "OR";
     background-color: #03a9f4;
     color: white;
     top: 95px;
