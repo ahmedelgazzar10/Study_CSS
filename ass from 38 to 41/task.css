@@ -1,0 +1,151 @@
+/* * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+} */
+
+.parent1 div {
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-color: #eeeeee;
+    border-radius: 50px;
+    margin: 40px;
+    border: 2px solid black;
+    position: relative;
+    counter-increment: ahmed;
+    box-shadow: -5px -5px 0px 0px #e91e63, 5px 5px 0px 0px #2196f3;
+}
+
+p {
+    clear: both;
+}
+
+.parent1 div::after {
+    content: "Element";
+    position: absolute;
+    font-weight: bold;
+    top: 37px;
+    left: 21px;
+}
+
+.parent1 div::before {
+    content: counter(ahmed);
+    position: absolute;
+    top: -8px;
+    color: white;
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    text-align: center;
+    left: 39px
+}
+
+.parent2 div {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: #efefef;
+    box-shadow: 0px 0px 0px 0px black inset;
+    border-radius: 13px 45px;
+    box-shadow: 0px 0px 4px 5px #bdbdbd inset;
+}
+
+.parent3 {
+    width: 550px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.parent3 .basic,
+.parent3 .pro {
+    width: calc((100% - 150px)/2);
+    height: 200px;
+    background-color: #eeeeee;
+    float: left;
+    margin-left: 50px;
+    position: relative;
+}
+
+.basic::after {
+    content: "Free";
+    position: absolute;
+    background-color: #dddddd;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    top: 43px;
+    left: 22px;
+    line-height: 5;
+    font-size: 30px;
+    text-align: center;
+}
+
+.pro::after {
+    content: "Pro";
+    position: absolute;
+    background-color: #dddddd;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    top: 43px;
+    left: 22px;
+    line-height: 5;
+    font-size: 30px;
+    text-align: center;
+}
+
+.basic::before {
+    content: "Basic";
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #03a9f4;
+    border-radius: 2px;
+    width: 150px;
+    padding: 5px;
+    text-align: center;
+    top: 8px;
+    left: 20px;
+}
+
+.pro::before {
+    content: "Pro";
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #03a9f4;
+    border-radius: 2px;
+    width: 150px;
+    padding: 5px;
+    text-align: center;
+    top: 8px;
+    left: 20px;
+}
+
+.line {
+    height: 200px;
+    width: 2px;
+    background-color: #03a9f4;
+    position: absolute;
+    left: 275px;
+}
+
+.line::before {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    content: "OR";
+    background-color: #03a9f4;
+    color: white;
+    top: 95px;
+    position: relative;
+    left: -10px;
+}
