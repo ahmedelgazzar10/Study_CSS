@@ -1,0 +1,82 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.parent1 {
+    width: 500px;
+    height: 300px;
+    background-color: #f2f2f4;
+    margin: 80px auto;
+    position: relative;
+    -web-kit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    transition-property: margin-bottom;
+}
+
+.son1 {
+    width: 300px;
+    height: 100px;
+    background-color: #dededc;
+    position: absolute;
+    top: 130px;
+    left: 90px;
+    text-align: center;
+    line-height: 5;
+    font-size: 20px;
+    transition-delay: 0.5s;
+}
+
+.parent1::after {
+    content: "will go up in hover in half second";
+    position: relative;
+    top: 65px;
+    left: 60px;
+    font-size: 25px;
+}
+
+.parent1:hover {
+    /* margin-top: 50px; */
+    /* transform: translateY(-10px); */
+    margin-top: 50px;
+}
+
+.parent1:hover .son1 {
+    margin-top: 10px;
+}
+
+.parent2 div {
+    width: 400px !important;
+    margin: 20px auto !important;
+    font-weight: bold;
+    background-color: #eeeeee !important;
+    color: black !important;
+    border: none !important;
+    font-size: 0px !important;
+    text-align: center;
+    position: relative;
+
+}
+
+.parent2 div::before {
+    content: "Elgazzar";
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    font-size: 20px !important;
+    color: black;
+}
+
+/* :root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+} */
+
+.parent3 div {
+    border: 2px solid var(--mainColor, black);
+    color: var(--mainColor, red);
+    padding: var(--mainPadding, 10px);
+    margin: 20px auto;
+    width: 400px;
+}
