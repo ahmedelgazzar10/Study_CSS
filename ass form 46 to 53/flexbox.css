@@ -1,0 +1,251 @@
+/*
+  Flexible Box
+  For Parent
+  - display: flex => To Start Flexible Box
+  - flex-direction: row => Default Value
+  - flex-wrap: nowrap => Default Value
+  - flex-flow: [Flex-Direction] + [Flex-Wrap]
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.parent1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 20px auto;
+    display: flex;
+    color: #ff5722;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    box-shadow: 5px 0px 0px 0px #ff5722, -5px 0px 0px 0px #03a9f4;
+}
+
+.parent2 {
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #eee;
+    align-content: space-between;
+    justify-content: space-around;
+}
+
+.parent2 div {
+    color: white;
+    background-color: red;
+    width: 186px;
+    text-align: center;
+    height: 30px;
+    line-height: 2;
+    margin: 10px 0px 10px 0px;
+}
+
+.parent3 {
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    background-color: #eeeeee;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+.parent3 div {
+    background-color: #607d8b;
+    width: 185px;
+    color: white;
+    text-align: center;
+}
+
+.parent3 .one {
+    order: 6;
+    align-self: flex-end;
+    margin-bottom: 5px;
+    height: 45px;
+    line-height: 3;
+}
+
+.parent3 .two {
+    order: 5;
+    margin-bottom: 5px;
+    line-height: 9;
+}
+
+.parent3 .five {
+    order: 4;
+    margin-bottom: 5px;
+    height: 145px;
+    line-height: 9;
+}
+
+.parent3 .four {
+    order: 3;
+    margin-top: 5px;
+    line-height: 9;
+}
+
+.parent3 .three {
+    order: 2;
+    align-self: flex-start;
+    margin-top: 5px;
+    height: 45px;
+    line-height: 3;
+
+}
+
+.parent3 .six {
+    order: 1;
+    margin-top: 5px;
+    height: 145px;
+    line-height: 9;
+}
+
+.parent4 {
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-between;
+}
+
+.parent4 div {
+    background-color: #009688;
+    margin: 5px;
+    text-align: center;
+}
+
+.parent4 .one {
+    width: 35px;
+    height: 70px;
+    line-height: 4;
+    align-self: flex-end;
+}
+
+.parent4 .two {
+    width: 300px;
+    height: 100px;
+    line-height: 6;
+}
+
+.parent4 .three {
+    width: 35px;
+    height: 70px;
+    line-height: 4;
+    align-self: flex-end;
+}
+
+.parent5 {
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.parent5 div {
+    margin: 5px;
+    color: white;
+    text-align: center;
+    height: 145px;
+    line-height: 9;
+    width: 90px;
+}
+
+.parent5 .one {
+    background-color: #ff9800;
+}
+
+.parent5 .two {
+    background-color: #8bc34a;
+    align-self: flex-end;
+}
+
+.parent5 .three {
+    background-color: #795548;
+}
+
+.parent5 .four {
+    background-color: #673ab7;
+    order: -1;
+    align-self: flex-end;
+}
+
+:root {
+    --background-items: #dddddd;
+    --margin-padding: 5px;
+}
+
+.page {
+    background-color: #eeeeee;
+    width: 600px;
+    height: 300px;
+
+}
+
+.header {
+    display: flex;
+}
+
+.header .logo {
+    background-color: var(--background-items);
+    margin: var(--margin-padding);
+    width: 50px;
+    height: 35px;
+    text-align: center;
+    line-height: 1.5;
+    padding: var(--margin-padding);
+}
+
+.header .links {
+    display: flex;
+    list-style-type: none;
+    background-color: var(--background-items);
+    height: 35px;
+    padding: var(--margin-padding);
+    margin: var(--margin-padding);
+    width: 525px;
+    justify-content: flex-end;
+}
+
+.header .links li {
+    margin: 3px;
+}
+
+.main-area {
+    display: flex;
+}
+
+.main-area .content {
+    background-color: var(--background-items);
+    margin: var(--margin-padding);
+    padding: var(--margin-padding);
+    height: 200px;
+    width: 360px;
+}
+
+.main-area .sidebar {
+    background-color: var(--background-items);
+    margin: var(--margin-padding);
+    padding: var(--margin-padding);
+    width: 215px;
+}
+
+.footer {
+    background-color: var(--background-items);
+    display: flex;
+    justify-content: space-between;
+    padding: var(--margin-padding);
+    margin: 10px 11px var(--margin-padding) var(--margin-padding);
+}
