@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+.parent1 div {
+    width: 600px;
+    margin: 20px auto;
+    background-color: #eee;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    border-right: #673ab7 10px solid;
+    border-left: #f44336 10px solid;
+    position: relative;
+}
+
+.parent1 div::first-letter {
+    color: red;
+}
+
+.parent1 div::after {
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(to right, #f44336 0%, #f44336 20%, #2196f3 20%, #2196f3 40%, #4caf50 40%, #4caf50 60%, #e91e63 60%, #e91e63 80%, #673ab7 80%, #673ab7 100%);
+    width: 600px;
+    height: 10px;
+    top: -10px;
+    left: -10px;
+}
+
+.parent1 div::before {
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(to right, #f44336 0%, #f44336 20%, #2196f3 20%, #2196f3 40%, #4caf50 40%, #4caf50 60%, #e91e63 60%, #e91e63 80%, #673ab7 80%, #673ab7 100%);
+    width: 600px;
+    height: 10px;
+    bottom: -10px;
+    left: -10px;
+}
+
+input {
+    display: block;
+    width: 600px;
+    margin: 20px auto;
+    background-color: #eee;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+input.one {
+    caret-color: red;
+}
+
+input.two,
+input.three {
+    pointer-events: none;
+}
+
+.container1,
+.container2,
+.container3 {
+    position: relative;
+}
+
+.container1::after,
+.container2::after,
+.container3::after {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 5px;
+    bottom: -5px;
+    background-image: linear-gradient(to right, #f44336 50%, #009688 50%, #009688 100%);
+    left: 47px;
+}
