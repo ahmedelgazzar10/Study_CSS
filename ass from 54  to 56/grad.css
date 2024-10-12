@@ -40,16 +40,7 @@
     left: -10px;
 }
 
-input {
-    display: block;
-    width: 600px;
-    margin: 20px auto;
-    background-color: #eee;
-    height: 50px;
-    padding: 10px;
-    border: none;
-    outline: none;
-}
+
 
 input.one {
     caret-color: red;
@@ -64,6 +55,16 @@ input.three {
 .container2,
 .container3 {
     position: relative;
+    margin: 20px auto;
+    width: 600px;
+}
+
+input {
+    border: none;
+    outline: none;
+    margin: 20px auto;
+    width: 600px;
+    padding: 5px;
 }
 
 .container1::after,
@@ -75,5 +76,5 @@ input.three {
     height: 5px;
     bottom: -5px;
     background-image: linear-gradient(to right, #f44336 50%, #009688 50%, #009688 100%);
-    left: 314px;
+    left: 0px;
 }
