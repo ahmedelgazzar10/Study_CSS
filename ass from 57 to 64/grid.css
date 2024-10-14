@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+
+}
+
+/* 
+.grid1 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+}
+
+.grid1 div {
+    background-color: #607d8b;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    counter-increment: ahmed;
+    padding: 10px;
+    display: flex;
+    to contol text in it (after)
+justify-content: center;
+align-items: center;
+}
+
+.grid1 div::after {
+    content: "Element " counter(ahmed);
+}
+
+.layout {
+    height: 500px;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas: "header header header header header header header header header header"
+        "sec sec sec sec sec sec sec  sec side side"
+        "footer footer footer footer footer footer footer footer footer footer";
+    grid-template-rows: 60px auto 60px;
+}
+
+header {
+    grid-area: header;
+    padding: 12px;
+    background-color: #03a9f4;
+}
+
+section {
+    grid-area: sec;
+    padding: 12px;
+    background-color: #ff5722;
+}
+
+aside {
+    grid-area: side;
+    padding: 12px;
+    background-color: #607d8b;
+}
+
+footer {
+    grid-area: footer;
+    padding: 12px;
+    background-color: #009688;
+}
+
+aside::after {
+    content: "aside";
+    color: white;
+}
+
+section::after {
+    content: "section";
+    color: white;
+}
+
+header::after {
+    content: "header";
+    color: white;
+}
+
+footer::after {
+    content: "footer";
+    color: white;
+}
+
+.grid2 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr auto;
+    grid-template-rows: 1fr auto;
+    gap: 10px;
+
+}
+
+.grid2 div {
+    color: white;
+    background-color: #403f3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.grid3 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 20px;
+    grid-template-areas: "eight eight eight eight eight eight eight eight eight eight"
+        "two two two two two two two three three three";
+}
+
+.grid3 .eight {
+    background-color: #03a9f4;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: eight;
+}
+
+.grid3 .two {
+    background-color: #03a9f4;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: two;
+}
+
+.grid3 .three {
+    background-color: #03a9f4;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: three;
+}
+
+.grid3 .five {
+    background-color: #03a9f4;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 11;
+}
+
+.grid3 .four {
+    background-color: #03a9f4;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column: 1 / 4;
+
+}
+
+.grid3 .six {
+    background-color: #03a9f4;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column: 1 / 4;
+}
+
+.grid3 .seven {
+    background-color: #03a9f4;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: seven;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column: 1 / 4;
+}
+
+.grid3 .one {
+    background-color: #03a9f4;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 6 / 7;
+    grid-column: 1 / 11;
+}
+
+.grid4 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, auto);
+    align-content: space-between;
+
+}
+
+.grid4 div {
+    background-color: #e91e63;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 5;
+}
+*/
+.main {
+    margin: 0px;
+    background-color: #eeeeee;
+    height: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+    padding: 30px;
+}
+
+.main div {
+    border-bottom: solid 3px #ff3d00;
+    padding: 10px;
+    position: relative;
+}
+
+.padge1 {
+    background-color: #ffffff;
+    grid-area: 1 /1 / 2 / 3;
+}
+
+.padge2 {
+    background-color: #ffffff;
+    grid-area: 1 / 3 /2 /4;
+}
+
+.padge3 {
+    background-color: black;
+    color: white;
+    grid-area: 1 / 4 / 4 / 5;
+}
+
+.padge4 {
+    background-color: #ffffff;
+    grid-area: 2 / 1 / 4 / 2;
+}
+
+.padge5 {
+    background-color: black;
+    color: white;
+    grid-area: 2 / 2 / 3 / 4;
+}
+
+.padge6 {
+    background-color: #ffffff;
+    grid-area: 3 / 2 /4 /4;
+}
+
+.padge7 {
+    background-color: #ffffff;
+    grid-area: 4 / 1 /5 /2;
+}
+
+.padge8 {
+    background-color: black;
+    color: white;
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.padge9 {
+    background-color: #ffffff;
+    grid-area: 4 / 3 /5 /4;
+}
+
+.padge10 {
+    background-color: #ffffff;
+    grid-area: 4 / 4 /5 /5;
+}
+
+.main div::after {
+    content: "''";
+    position: absolute;
+    bottom: -15px;
+    right: 15px;
+    font-size: 50px;
+    color: #c4b9b9;
+    rotate: 20deg;
+}
+
+h5 {
+    margin-bottom: 15px;
+    margin-top: -15px;
+    color: #a3a3a3;
+}
